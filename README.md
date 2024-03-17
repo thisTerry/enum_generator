@@ -28,13 +28,13 @@
         static const UINT32 s_enumTableSizeOfColor = sizeof(s_enumTableOfColor) / sizeof(s_enumTableOfColor[0]);
 
 
-        Usage 1:
+##        Usage 1:
   python.exe -file single_cpp.cpp [-output enum_table.cpp]
                 single_cpp.cpp为待处理的文件cpp文件。本程序会扫描cpp文件中的enum，并生成每个enum的静态表
                 enum_table.cpp为生成的文件.如果不指定输出文件，默认生成到：当前路径\enum_table.cpp
 
 
-        Usage 2:
+##        Usage 2:
   python.exe -files config_file.txt [-output enum_table.cpp]
                 config_file.txt文件的内容:每行一个cpp文件。本程序会扫描cpp文件中的enum，并生成每个enum的静态表
                 enum_table.cpp为生成的文件.如果不指定输出文件，默认生成到：当前路径\enum_table.cpp
